@@ -1,0 +1,15 @@
+server:
+  port: 8181
+  servlet:
+    context-path: /students
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/students?currentSchema=public
+    username: postgres
+    password: pass1
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
